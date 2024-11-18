@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
     return (
-        <div className="container mx-auto font-montserrat">
+        <div className="font-montserrat">
             <Outlet></Outlet>
         </div>
     );

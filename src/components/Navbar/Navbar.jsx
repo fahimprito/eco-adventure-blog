@@ -32,9 +32,15 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar border">
-                        <img src={userIcon} />
-                    </label>
+                    <div className="relative group">
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar border">
+                            <img src={userIcon} alt="User Icon" className="rounded-full" />
+                        </label>
+                        <span className="absolute top-12 right-0 bg-white text-black px-3 py-1 rounded shadow-md text-sm hidden group-hover:block whitespace-nowrap z-10">
+                            fahim ahmmed
+                        </span>
+                    </div>
+
 
                 </div>
             </div>
