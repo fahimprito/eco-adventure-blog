@@ -1,16 +1,24 @@
+import AllAdventures from "../components/AdventureCards/AllAdventures";
 import Banner from "../components/Banner/Banner";
 
 
 
 const Home = () => {
     return (
-        <div>
-            <Banner></Banner>
-
-            <div className="container mx-auto">
+        <div className="bg-base-200">
+            {/* banner */}
+            <section>
+                <Banner></Banner>
+            </section>
+            {/* Adventure Experiences Section */}
+            <section className="container mx-auto">
                 Home
+                <AllAdventures></AllAdventures>
+            </section>
 
-            </div>
+
+            <section></section>
+            <section></section>
 
 
         </div>

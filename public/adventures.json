@@ -1,0 +1,438 @@
+[
+    {
+        "id": 1,
+        "title": "Mountain Trekking in the Himalayas",
+        "image": "https://i.ibb.co.com/kShbr4Y/Mountain-Trekkingin-Himalayas.jpg",
+        "category": "Mountain Treks",
+        "shortDescription": "Embark on an unforgettable journey through the majestic Himalayas. Enjoy stunning landscapes and thrilling challenges.",
+        "cost": 1200,
+        "bookingAvailability": true,
+        "location": "Himalayas, Nepal",
+        "duration": "7 days",
+        "adventureLevel": "Challenging",
+        "includedItems": [
+            "Guide",
+            "Meals",
+            "Trekking Equipment",
+            "Permits"
+        ],
+        "ecoFriendlyFeatures": [
+            "Eco-certified trekking lodges",
+            "Leave No Trace policy",
+            "Reusable water bottles provided",
+            "Sustainable trekking practices followed"
+        ],
+        "maxGroupSize": 10,
+        "specialInstructions": [
+            "Bring warm clothing",
+            "Prepare for high altitudes",
+            "Wear sturdy trekking boots"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Scuba Diving in the Maldives",
+        "image": "https://i.ibb.co.com/jZdzzZq/Scuba-Divinginthe-Maldives.jpg",
+        "category": "Ocean Dives",
+        "shortDescription": "Dive into turquoise waters and explore vibrant coral reefs. Perfect for adventure and marine enthusiasts.",
+        "cost": 1500,
+        "bookingAvailability": true,
+        "location": "Maldives",
+        "duration": "5 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Diving Equipment",
+            "Instructor",
+            "Boat Rides"
+        ],
+        "ecoFriendlyFeatures": [
+            "Marine conservation donation",
+            "Eco-certified dive operators",
+            "Biodegradable sunscreen",
+            "Coral restoration participation"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Must have basic swimming skills",
+            "Carry sunscreen (reef-safe)",
+            "Complete dive certification prior to trip"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "African Wildlife Safari",
+        "image": "https://i.ibb.co.com/tmFN6Sw/African-Wildlife-Safari.jpg",
+        "category": "Wildlife Safaris",
+        "shortDescription": "Join an exciting safari adventure and witness Africa's iconic wildlife. Perfect for nature lovers and photographers.",
+        "cost": 2500,
+        "bookingAvailability": false,
+        "location": "Serengeti National Park, Tanzania",
+        "duration": "6 days",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Guided Safari",
+            "Meals",
+            "Lodging"
+        ],
+        "ecoFriendlyFeatures": [
+            "Solar-powered lodges",
+            "Anti-poaching programs supported",
+            "Recycling initiatives implemented",
+            "Sustainable tourism and conservation"
+        ],
+        "maxGroupSize": 12,
+        "specialInstructions": [
+            "Pack lightweight clothing",
+            "Bring binoculars",
+            "Carry a camera"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Rainforest Expedition in the Amazon",
+        "image": "https://i.ibb.co.com/P1vNrQQ/Rainforest-Expeditioninthe-Amazon.jpg",
+        "category": "Forest Expeditions",
+        "shortDescription": "Discover the incredible biodiversity of the Amazon. A must-visit for nature enthusiasts and adventurers.",
+        "cost": 1800,
+        "bookingAvailability": true,
+        "location": "Amazon Basin, Brazil",
+        "duration": "7 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Guided Tours",
+            "Meals",
+            "Camping Gear"
+        ],
+        "ecoFriendlyFeatures": [
+            "Support for indigenous tribes",
+            "Biodegradable camping gear used",
+            "Eco-friendly waste disposal practices",
+            "Low environmental impact activities"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Use insect repellent",
+            "Carry waterproof bags",
+            "Stay hydrated"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Camping Retreat in Yosemite",
+        "image": "https://i.ibb.co.com/3N0VtNs/Camping-Retreatin-Yosemite.jpg",
+        "category": "Camping Retreats",
+        "shortDescription": "Reconnect with nature in Yosemite National Park. Enjoy peaceful nights under a star-filled sky.",
+        "cost": 600,
+        "bookingAvailability": true,
+        "location": "Yosemite, USA",
+        "duration": "3 days",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Tent",
+            "Campfire Meals",
+            "Park Entry Fee"
+        ],
+        "ecoFriendlyFeatures": [
+            "Reusable utensils for meals",
+            "Pack-out-waste policy enforced",
+            "Eco-friendly camping gear provided",
+            "Leave-no-trace camping practices"
+        ],
+        "maxGroupSize": 6,
+        "specialInstructions": [
+            "Bring a sleeping bag",
+            "Avoid loud noises to protect wildlife",
+            "Carry sufficient water"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Beach Camping at Cox’s Bazar",
+        "image": "https://i.ibb.co.com/t8Ny0JQ/Beach-Campingat-Cox-s-Bazar.jpg",
+        "category": "Camping Retreats",
+        "shortDescription": "Relax and camp under the stars at the world's longest natural beach. Perfect for unwinding and beach lovers.",
+        "cost": 500,
+        "bookingAvailability": true,
+        "location": "Cox's Bazar, Bangladesh",
+        "duration": "2 days",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Tent",
+            "Campfire Meals",
+            "Beach Activities"
+        ],
+        "ecoFriendlyFeatures": [
+            "Reusable utensils for camping",
+            "Beach trash collection initiative",
+            "Eco-friendly campsite practices",
+            "Conservation efforts supported"
+        ],
+        "maxGroupSize": 12,
+        "specialInstructions": [
+            "Carry sunscreen and hats",
+            "Pack lightweight clothing",
+            "Avoid disturbing local wildlife"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Whitewater Rafting in the Grand Canyon",
+        "image": "https://i.ibb.co.com/vB10MtB/Whitewater-Rafting-Grand-Canyon.jpg",
+        "category": "River Adventures",
+        "shortDescription": "Navigate thrilling rapids of the Colorado River. An unforgettable adventure for thrill-seekers.",
+        "cost": 900,
+        "bookingAvailability": true,
+        "location": "Grand Canyon, USA",
+        "duration": "5 days",
+        "adventureLevel": "Challenging",
+        "includedItems": [
+            "Rafts",
+            "Guides",
+            "Safety Gear"
+        ],
+        "ecoFriendlyFeatures": [
+            "Eco-certified operators",
+            "Reusable safety gear provided",
+            "Educational environmental included",
+            "Environmental impact minimized"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Prepare for rapid currents",
+            "Bring water-resistant clothing",
+            "Follow guide instructions"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Desert Exploration in Morocco",
+        "image": "https://i.ibb.co.com/g7BJmzV/Desert-Explorationin-Morocco.jpg",
+        "category": "Desert Exploration",
+        "shortDescription": "Ride camels and explore the Sahara's stunning dunes. Experience the magic of desert life.",
+        "cost": 1300,
+        "bookingAvailability": true,
+        "location": "Sahara Desert, Morocco",
+        "duration": "4 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Camel Ride",
+            "Meals",
+            "Tented Lodging"
+        ],
+        "ecoFriendlyFeatures": [
+            "Solar-powered desert campsites",
+            "Locally sourced food served",
+            "Desert ecosystem preservation promoted",
+            "Eco-friendly desert activities encouraged"
+        ],
+        "maxGroupSize": 10,
+        "specialInstructions": [
+            "Carry a scarf for sand protection",
+            "Wear breathable clothing",
+            "Pack sunscreen"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Sundarbans Wildlife Cruise",
+        "image": "https://i.ibb.co.com/xLwJn65/Sundarbans-Wildlife-Cruise.jpg",
+        "category": "Mangrove Forest Expeditions",
+        "shortDescription": "Cruise through the serene waterways of the Sundarbans. Spot Bengal tigers, crocodiles, and exotic birds.",
+        "cost": 950,
+        "bookingAvailability": true,
+        "location": "Sundarbans, Bangladesh",
+        "duration": "3 days",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Guided Cruise",
+            "Meals",
+            "Safety Equipment"
+        ],
+        "ecoFriendlyFeatures": [
+            "Low-emission boats used",
+            "Eco-friendly amenities onboard",
+            "Support for conservation projects",
+            "Biodiversity education programs"
+        ],
+        "maxGroupSize": 15,
+        "specialInstructions": [
+            "Bring binoculars for wildlife spotting",
+            "Wear light and breathable clothing",
+            "Carry insect repellent"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Northern Lights Hiking Adventure",
+        "image": "https://i.ibb.co.com/5rMJ2mK/Northern-Lights-Hiking-Adventure.jpg",
+        "category": "Mountain Treks",
+        "shortDescription": "Hike under the Northern Lights for an unforgettable adventure. A magical experience awaits you.",
+        "cost": 1400,
+        "bookingAvailability": true,
+        "location": "Iceland",
+        "duration": "4 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Guide",
+            "Meals",
+            "Warm Lodging"
+        ],
+        "ecoFriendlyFeatures": [
+            "Solar-powered lodging",
+            "Eco-friendly transport",
+            "Glacier conservation efforts supported",
+            "Eco-certified hiking equipment provided"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Carry insulated clothing",
+            "Bring a headlamp",
+            "Stay prepared for cold weather"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Kaptai Lake Kayaking Adventure",
+        "image": "https://i.ibb.co.com/TrncB1Q/Kaptai-Lake-Kayaking-Adventure.jpg",
+        "category": "River Adventures",
+        "shortDescription": "Paddle across the serene waters of Kaptai Lake, surrounded by lush greenery and hills. Ideal for relaxation and exploration.",
+        "cost": 600,
+        "bookingAvailability": true,
+        "location": "Kaptai Lake, Rangamati, Bangladesh",
+        "duration": "1 day",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Kayak",
+            "Life Jackets",
+            "Snacks"
+        ],
+        "ecoFriendlyFeatures": [
+            "Non-motorized kayaks used",
+            "Sustainable food options provided",
+            "Responsible tourism encouraged",
+            "Eco-friendly kayaking equipment used"
+        ],
+        "maxGroupSize": 10,
+        "specialInstructions": [
+            "Wear water-resistant clothing",
+            "Carry waterproof bags for belongings",
+            "Follow the guide's instructions"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Hiking at Sajek Valley",
+        "image": "https://i.ibb.co.com/jy3LzZB/Hikingat-Sajek-Valley.jpg",
+        "category": "Mountain Treks",
+        "shortDescription": "Explore the scenic trails of Sajek Valley with breathtaking views of misty mountains and lush forests.",
+        "cost": 800,
+        "bookingAvailability": true,
+        "location": "Sajek Valley, Rangamati, Bangladesh",
+        "duration": "2 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Guide",
+            "Meals",
+            "Lodging"
+        ],
+        "ecoFriendlyFeatures": [
+            "Eco-lodges providing accommodation",
+            "Minimal impact hiking encouraged",
+            "Local community support promoted",
+            "Carbon offset travel supported"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Carry hiking boots and a raincoat",
+            "Bring a first aid kit",
+            "Stay hydrated during the trek"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Kayaking through Fjords",
+        "image": "https://i.ibb.co.com/SB1FDs7/Kayakingthrough-Fjords.jpg",
+        "category": "River Adventures",
+        "shortDescription": "Paddle along serene fjords and enjoy breathtaking scenery. Perfect for both adventure and peace seekers.",
+        "cost": 1100,
+        "bookingAvailability": true,
+        "location": "Norwegian Fjords",
+        "duration": "4 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Kayak",
+            "Meals",
+            "Guide"
+        ],
+        "ecoFriendlyFeatures": [
+            "Non-motorized boats only",
+            "Eco-friendly food options",
+            "Eco-friendly paddling practices",
+            "Fjord preservation supported"
+        ],
+        "maxGroupSize": 6,
+        "specialInstructions": [
+            "Wear waterproof layers",
+            "Practice basic paddling skills",
+            "Follow guide instructions"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Caving in Waitomo Glowworm Caves",
+        "image": "https://i.ibb.co.com/tHmNst7/Cavingin-Waitomo-Glowworm-Caves.jpg",
+        "category": "Forest Expeditions",
+        "shortDescription": "Explore stunning glowworm caves in Waitomo. A mystical underground adventure for explorers.",
+        "cost": 1000,
+        "bookingAvailability": true,
+        "location": "Waitomo, New Zealand",
+        "duration": "2 days",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Guide",
+            "Safety Gear",
+            "Light"
+        ],
+        "ecoFriendlyFeatures": [
+            "Minimal-impact tours conducted",
+            "Reusable caving gear used",
+            "Responsible visitation practices followed",
+            "Energy-efficient lighting used"
+        ],
+        "maxGroupSize": 10,
+        "specialInstructions": [
+            "Wear sturdy shoes",
+            "Avoid touching glowworms",
+            "Bring a waterproof camera"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Polar Bear Viewing Adventure",
+        "image": "https://i.ibb.co.com/cJQmqpy/Polar-Bear-Viewing-Adventure.jpg",
+        "category": "Wildlife Safaris",
+        "shortDescription": "Observe majestic polar bears in their natural habitat. A once-in-a-lifetime experience for wildlife enthusiasts.",
+        "cost": 3000,
+        "bookingAvailability": false,
+        "location": "Churchill, Canada",
+        "duration": "5 days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Guide",
+            "Meals",
+            "Polar Vehicle"
+        ],
+        "ecoFriendlyFeatures": [
+            "Solar-powered vehicles used",
+            "Wildlife conservation funds supported",
+            "Eco-friendly tourism practices",
+            "Zero-emission snowmobiles used"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Carry insulated clothing",
+            "Use a zoom camera lens",
+            "Avoid close encounters"
+        ]
+    }
+]
