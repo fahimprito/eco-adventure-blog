@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
+    const { createUser, updateUserProfile } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -16,6 +19,22 @@ const Register = () => {
         const password = form.password.value;
         console.log({ name, photo, email, password });
 
+        // create user
+        createUser(email, password)
+            .then(() => {
+                e.target.reset();
+                updateUserProfile({ displayName: name, photoURL: photo })
+                    .then(() => {
+                        navigate("/");
+                        
+                    })
+                    .catch((err) => {
+                        console.log(err);
+                    });
+            })
+            .catch(error => {
+                console.log('ERROR', error.message)
+            })
 
 
     }
