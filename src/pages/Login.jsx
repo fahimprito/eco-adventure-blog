@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
+    const { loginUser } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const [error, setError] = useState({});
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -13,6 +17,14 @@ const Login = () => {
         const password = form.password.value;
         console.log({ email, password });
 
+        loginUser(email, password)
+            .then(() => {
+                e.target.reset();
+                navigate(location.state ? location.state : '/');
+            })
+            .catch(err => {
+                setError({ ...error, login: err.message });
+            })
     }
 
     return (
@@ -35,7 +47,7 @@ const Login = () => {
                         <input
                             type={showPassword ? "text" : "password"}
                             name="password" placeholder="Enter your password"
-                            className="input rounded-none bg-base-200" required />
+                            className={`input rounded-none bg-base-200 ${!showPassword && "font-mono"}`} required />
                         <button
                             onClick={() => setShowPassword(!showPassword)}
                             type="button"
@@ -50,6 +62,12 @@ const Login = () => {
                         <Link className="text-gray-500 text-sm font-medium link-hover">
                             Forgot password?</Link>
                     </label>
+
+                    {error.login && (
+                        <label className="label text-sm text-red-600">
+                            {error.login}
+                        </label>
+                    )}
 
                     <div className="form-control mt-4">
                         <button className="btn bg-[#f9a31a] hover:bg-[#db8727] text-lg rounded-md">Login</button>

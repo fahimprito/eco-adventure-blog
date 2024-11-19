@@ -35,18 +35,33 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
-                    <div className="relative group">
-                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar border mt-1">
-                            <img src={userIcon} alt="User Icon" className="rounded-full" />
-                        </label>
-                        {
-                            user && <span
-                                className="absolute top-12 right-0 bg-white text-black px-3 py-1 rounded shadow-md text-sm hidden group-hover:block whitespace-nowrap z-10">
-                                {user.name}
-                            </span>
-                        }
 
-                    </div>
+                    {
+                        user && user.photoURL ? (
+                            <div className="relative group">
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar border mt-1">
+                                    <img src={user.photoURL} alt="User Icon" className="rounded-full" />
+                                </label>
+                                <span
+                                    className="absolute top-14 right-0 bg-white text-black px-3 py-1 rounded shadow-md text-sm hidden group-hover:block whitespace-nowrap z-10">
+                                    {user.displayName}
+                                </span>
+                            </div>
+                        ) : (
+                            <div className="relative group">
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar border mt-1">
+                                    <img src={userIcon} alt="User Icon" className="rounded-full" />
+                                </label>
+                                {
+                                    user && <span
+                                        className="absolute top-14 right-0 bg-white text-black px-3 py-1 rounded shadow-md text-sm hidden group-hover:block whitespace-nowrap z-10">
+                                        {user.displayName}
+                                    </span>
+                                }
+                            </div>
+                        )
+                    }
+                    
                     <Link to="/login">
                         <button
                             className="btn bg-[#f9a31a] hover:text-white hover:bg-[#2B3440] font-semibold text-base px-5">
@@ -58,12 +73,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu for Small Screens */}
-            {/* {isMenuOpen && (
-                <div className="lg:hidden bg-base-100 w-full shadow-md">
-                    <ul className="flex flex-col items-center gap-4 py-4">{navLinks}</ul>
-                </div>
-            )} */}
             {/* Mobile Menu for Small Screens */}
             <div
                 className={`lg:hidden bg-base-200 w-full shadow-md transition duration-500 ease-in-out ${isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
