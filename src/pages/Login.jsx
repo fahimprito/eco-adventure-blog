@@ -47,7 +47,7 @@ const Login = () => {
                         <input
                             type={showPassword ? "text" : "password"}
                             name="password" placeholder="Enter your password"
-                            className={`input rounded-none bg-base-200 ${!showPassword && "font-mono"}`} required />
+                            className="input rounded-none bg-base-200" required />
                         <button
                             onClick={() => setShowPassword(!showPassword)}
                             type="button"

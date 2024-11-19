@@ -6,7 +6,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const { user } = useContext(AuthContext);
+    const { user, logOutUser } = useContext(AuthContext);
 
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
@@ -61,14 +61,16 @@ const Navbar = () => {
                             </div>
                         )
                     }
-                    
-                    <Link to="/login">
-                        <button
-                            className="btn bg-[#f9a31a] hover:text-white hover:bg-[#2B3440] font-semibold text-base px-5">
-                            Login
-                        </button>
-                    </Link>
 
+                    {user ? <button
+                        onClick={logOutUser}
+                        className="btn bg-[#f9a31a] hover:text-white hover:bg-[#2B3440] font-semibold text-base px-5">
+                        Log Out
+                    </button> : <Link
+                        to="/login"
+                        className="btn bg-[#f9a31a] hover:text-white hover:bg-[#2B3440] font-semibold text-base px-5">
+                        Login
+                    </Link>}
 
                 </div>
             </div>
