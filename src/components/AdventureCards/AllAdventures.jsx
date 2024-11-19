@@ -12,7 +12,7 @@ const AllAdventures = () => {
     }, [])
 
     return (
-        <div className="py-10">
+        <div className="py-4 md:py-10 px-4">
             <div>
                 <h2 className="text-3xl font-bold my-10 px-4 divider divider-start">Adventure Experiences</h2>
             </div>

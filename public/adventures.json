@@ -118,35 +118,6 @@
     },
     {
         "id": 5,
-        "title": "Camping Retreat in Yosemite",
-        "image": "https://i.ibb.co.com/3N0VtNs/Camping-Retreatin-Yosemite.jpg",
-        "category": "Camping Retreats",
-        "shortDescription": "Reconnect with nature in Yosemite National Park. Enjoy peaceful nights under a star-filled sky.",
-        "cost": 600,
-        "bookingAvailability": true,
-        "location": "Yosemite, USA",
-        "duration": "3 days",
-        "adventureLevel": "Easy",
-        "includedItems": [
-            "Tent",
-            "Campfire Meals",
-            "Park Entry Fee"
-        ],
-        "ecoFriendlyFeatures": [
-            "Reusable utensils for meals",
-            "Pack-out-waste policy enforced",
-            "Eco-friendly camping gear provided",
-            "Leave-no-trace camping practices"
-        ],
-        "maxGroupSize": 6,
-        "specialInstructions": [
-            "Bring a sleeping bag",
-            "Avoid loud noises to protect wildlife",
-            "Carry sufficient water"
-        ]
-    },
-    {
-        "id": 6,
         "title": "Beach Camping at Cox’s Bazar",
         "image": "https://i.ibb.co.com/t8Ny0JQ/Beach-Campingat-Cox-s-Bazar.jpg",
         "category": "Camping Retreats",
@@ -175,7 +146,7 @@
         ]
     },
     {
-        "id": 7,
+        "id": 6,
         "title": "Whitewater Rafting in the Grand Canyon",
         "image": "https://i.ibb.co.com/vB10MtB/Whitewater-Rafting-Grand-Canyon.jpg",
         "category": "River Adventures",
@@ -204,7 +175,7 @@
         ]
     },
     {
-        "id": 8,
+        "id": 7,
         "title": "Desert Exploration in Morocco",
         "image": "https://i.ibb.co.com/g7BJmzV/Desert-Explorationin-Morocco.jpg",
         "category": "Desert Exploration",
@@ -233,7 +204,7 @@
         ]
     },
     {
-        "id": 9,
+        "id": 8,
         "title": "Sundarbans Wildlife Cruise",
         "image": "https://i.ibb.co.com/xLwJn65/Sundarbans-Wildlife-Cruise.jpg",
         "category": "Mangrove Forest Expeditions",
@@ -262,7 +233,7 @@
         ]
     },
     {
-        "id": 10,
+        "id": 9,
         "title": "Northern Lights Hiking Adventure",
         "image": "https://i.ibb.co.com/5rMJ2mK/Northern-Lights-Hiking-Adventure.jpg",
         "category": "Mountain Treks",
@@ -291,7 +262,7 @@
         ]
     },
     {
-        "id": 11,
+        "id": 10,
         "title": "Kaptai Lake Kayaking Adventure",
         "image": "https://i.ibb.co.com/TrncB1Q/Kaptai-Lake-Kayaking-Adventure.jpg",
         "category": "River Adventures",
@@ -320,65 +291,7 @@
         ]
     },
     {
-        "id": 12,
-        "title": "Hiking at Sajek Valley",
-        "image": "https://i.ibb.co.com/jy3LzZB/Hikingat-Sajek-Valley.jpg",
-        "category": "Mountain Treks",
-        "shortDescription": "Explore the scenic trails of Sajek Valley with breathtaking views of misty mountains and lush forests.",
-        "cost": 800,
-        "bookingAvailability": true,
-        "location": "Sajek Valley, Rangamati, Bangladesh",
-        "duration": "2 days",
-        "adventureLevel": "Moderate",
-        "includedItems": [
-            "Guide",
-            "Meals",
-            "Lodging"
-        ],
-        "ecoFriendlyFeatures": [
-            "Eco-lodges providing accommodation",
-            "Minimal impact hiking encouraged",
-            "Local community support promoted",
-            "Carbon offset travel supported"
-        ],
-        "maxGroupSize": 8,
-        "specialInstructions": [
-            "Carry hiking boots and a raincoat",
-            "Bring a first aid kit",
-            "Stay hydrated during the trek"
-        ]
-    },
-    {
-        "id": 13,
-        "title": "Kayaking through Fjords",
-        "image": "https://i.ibb.co.com/SB1FDs7/Kayakingthrough-Fjords.jpg",
-        "category": "River Adventures",
-        "shortDescription": "Paddle along serene fjords and enjoy breathtaking scenery. Perfect for both adventure and peace seekers.",
-        "cost": 1100,
-        "bookingAvailability": true,
-        "location": "Norwegian Fjords",
-        "duration": "4 days",
-        "adventureLevel": "Moderate",
-        "includedItems": [
-            "Kayak",
-            "Meals",
-            "Guide"
-        ],
-        "ecoFriendlyFeatures": [
-            "Non-motorized boats only",
-            "Eco-friendly food options",
-            "Eco-friendly paddling practices",
-            "Fjord preservation supported"
-        ],
-        "maxGroupSize": 6,
-        "specialInstructions": [
-            "Wear waterproof layers",
-            "Practice basic paddling skills",
-            "Follow guide instructions"
-        ]
-    },
-    {
-        "id": 14,
+        "id": 11,
         "title": "Caving in Waitomo Glowworm Caves",
         "image": "https://i.ibb.co.com/tHmNst7/Cavingin-Waitomo-Glowworm-Caves.jpg",
         "category": "Forest Expeditions",
@@ -407,7 +320,7 @@
         ]
     },
     {
-        "id": 15,
+        "id": 12,
         "title": "Polar Bear Viewing Adventure",
         "image": "https://i.ibb.co.com/cJQmqpy/Polar-Bear-Viewing-Adventure.jpg",
         "category": "Wildlife Safaris",
