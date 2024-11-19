@@ -12,8 +12,8 @@ const Home = () => {
             </section>
             {/* Adventure Experiences Section */}
             <section className="container mx-auto">
-                Home
                 <AllAdventures></AllAdventures>
+                
             </section>
 
 

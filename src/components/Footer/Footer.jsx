@@ -15,30 +15,34 @@ const Footer = () => {
                         </div>
                         <div className="flex justify-center space-x-4 mb-3">
                             <a
-                                href="#"
+                                href="https://www.instagram.com/fahimprito/"
                                 className="flex items-center justify-center w-10 h-10 rounded bg-gray-800 text-white hover:bg-pink-500 transition-colors text-xl"
                                 aria-label="Instagram"
+                                target="_blank"
                             >
                                 <FaInstagram />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.facebook.com/fahimprito"
                                 className="flex items-center justify-center w-10 h-10 rounded bg-gray-800 text-white hover:bg-blue-600 transition-colors text-xl"
                                 aria-label="Facebook"
+                                target="_blank"
                             >
                                 <FaFacebookF />
                             </a>
                             <a
-                                href="#"
+                                href="https://x.com/fahimprito?lang=en"
                                 className="flex items-center justify-center w-10 h-10 rounded bg-gray-800 text-white hover:bg-gray-500 transition-colors text-xl"
                                 aria-label="Twitter"
+                                target="_blank"
                             >
                                 <FaSquareXTwitter />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.pinterest.com/fahimprito/"
                                 className="flex items-center justify-center w-10 h-10 rounded bg-gray-800 text-white hover:bg-red-600 transition-colors text-xl"
                                 aria-label="Pinterest"
+                                target="_blank"
                             >
                                 <FaPinterest />
                             </a>
