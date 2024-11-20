@@ -1,8 +1,10 @@
 import { useLoaderData, useParams } from "react-router-dom";
 // import img from "../assets/AfricanWildlifeSafari.jpg"
 import { RiArrowRightSLine } from "react-icons/ri";
+import { MdErrorOutline } from "react-icons/md";
 
 const AdventureDetails = () => {
+
     const data = useLoaderData();
     const { id } = useParams();
     const adventure = data.find(sAdventure => sAdventure.id == id);
@@ -10,8 +12,15 @@ const AdventureDetails = () => {
     const { image, title, category, shortDescription, cost, bookingAvailability, location, duration, adventureLevel, includedItems, ecoFriendlyFeatures, maxGroupSize, specialInstructions } = adventure;
 
     const handleTalkToExpert = () => {
-        console.log("opening");
-        
+        const currentTime = new Date();
+        const currentHour = currentTime.getHours();
+
+        if (currentHour >= 10 && currentHour < 20) {
+            window.open('https://meet.google.com/', '_blank');
+        } else {
+            document.getElementById('purchase_modal').showModal();
+        }
+
     }
 
     return (
@@ -110,6 +119,28 @@ const AdventureDetails = () => {
                     </div>
                 </div>
 
+            </div>
+
+
+            {/* modal */}
+            <div>
+                <dialog id="purchase_modal" className="modal sm:modal-middle">
+                    <div className="modal-box flex flex-col items-center">
+                        <p className="text-7xl text-red-400 mb-6"><MdErrorOutline /></p>
+                        <h3 className="text-2xl font-bold">We’re Closed Right Now!</h3>
+                        <div className="divider"></div>
+                        <p className="text-lg text-gray-600 text-center pb-4">Our eco-experts are available to assist you from 10:00 AM to 8:00 PM daily. Please check back during these hours for expert guidance on your next adventure!</p>
+                        <div className="modal-action grid grid-cols-1 w-full">
+                            <form method="dialog">
+                                <button
+                                    // onClick={handleCloseModal}
+                                    className="btn bg-[#f9a31aa1] hover:bg-[#f9a31a] text-lg w-full px-10">
+                                    Close
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
             </div>
 
         </div>
