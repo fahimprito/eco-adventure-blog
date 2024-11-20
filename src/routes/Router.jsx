@@ -3,11 +3,11 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import About from "../pages/About";
-import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import AdventureDetails from "../pages/AdventureDetails";
 import PrivateRoute from "./PrivateRoute";
+import UserProfile from "../pages/UserProfile";
 
 const router = createBrowserRouter([
     {
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
                 element: <About></About>,
             },
             {
-                path: "/contact",
-                element: <Contact></Contact>,
+                path: "/myprofile",
+                element: <UserProfile></UserProfile>,
             },
             {
                 path: "/adventure/:id",

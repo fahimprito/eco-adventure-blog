@@ -6,6 +6,7 @@ import { AuthContext } from "../providers/AuthProvider";
 
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
+    const [error, setError] = useState({});
     const { createUser, updateUserProfile, loginWithGoogle } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
@@ -26,14 +27,14 @@ const Register = () => {
                 e.target.reset();
                 updateUserProfile({ displayName: name, photoURL: photo })
                     .then(() => {
-                        navigate(location.state ? location.state : '/');
+                        navigate('/');
                     })
                     .catch((err) => {
-                        console.log(err);
+                        setError({ ...error, createUser: err.message });
                     });
             })
-            .catch(error => {
-                console.log('ERROR', error.message)
+            .catch(err => {
+                setError({ ...error, createUser: err.message });
             })
 
 
@@ -90,6 +91,12 @@ const Register = () => {
                             {showPassword ? <FaEye /> : <FaEyeSlash />}
                         </button>
                     </div>
+
+                    {error.createUser && (
+                        <label className="label text-sm text-red-600">
+                            {error.createUser}
+                        </label>
+                    )}
 
                     <div className="form-control mt-8">
                         <button className="btn bg-[#f9a31a] hover:bg-[#db8727] text-lg rounded-md">
