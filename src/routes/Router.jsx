@@ -7,6 +7,7 @@ import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import AdventureDetails from "../pages/AdventureDetails";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/adventure/:id",
-                element: <AdventureDetails></AdventureDetails>,
+                element: <PrivateRoute><AdventureDetails></AdventureDetails></PrivateRoute>,
                 loader: () => fetch('/adventures.json')
             },
             {

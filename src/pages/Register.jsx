@@ -1,13 +1,14 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
-    const { createUser, updateUserProfile } = useContext(AuthContext);
+    const { createUser, updateUserProfile, loginWithGoogle } = useContext(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -25,8 +26,7 @@ const Register = () => {
                 e.target.reset();
                 updateUserProfile({ displayName: name, photoURL: photo })
                     .then(() => {
-                        navigate("/");
-                        
+                        navigate(location.state ? location.state : '/');
                     })
                     .catch((err) => {
                         console.log(err);
@@ -37,6 +37,16 @@ const Register = () => {
             })
 
 
+    }
+
+    const handleGoogleSignIn = () => {
+        loginWithGoogle()
+            .then(() => {
+                navigate(location.state ? location.state : '/');
+            })
+            .catch(error => {
+                console.log('ERROR', error.message)
+            })
     }
 
     return (
@@ -95,7 +105,7 @@ const Register = () => {
                 </Link></p>
                 <div className="divider">OR</div>
                 <button
-                    // onClick={handleGoogleSignIn}
+                    onClick={handleGoogleSignIn}
                     className="btn btn-outline w-full text-blue-500 font-semibold text-lg rounded-full">
                     <span className="text-2xl">
                         <FcGoogle></FcGoogle>
