@@ -6,7 +6,7 @@ import { AuthContext } from "../providers/AuthProvider";
 
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
-    const [error, setError] = useState({});
+    const [error, setError] = useState('');
     const { createUser, updateUserProfile, loginWithGoogle } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
@@ -21,6 +21,31 @@ const Register = () => {
         const password = form.password.value;
         console.log({ name, photo, email, password });
 
+        setError('')
+        console.log(error);
+
+
+        //passwordvalidate
+        // if (password.length < 6) {
+        //     setError("password must be at least 6 characters long.");
+        //     return;
+        // }
+        const errorMessage = [];
+        if (!/[A-Z]/.test(password)) {
+            errorMessage.push("contain at least one uppercase letter");
+        }
+        if (!/[a-z]/.test(password)) {
+            errorMessage.push("contain at least one lowercase letter");
+        }
+        if (password.length < 6) {
+            errorMessage.push("be at least 6 characters long");
+        }
+        // Set error or clear it
+        if (errorMessage.length > 0) {
+            setError(`Password must ${errorMessage.join(", ")}.`);
+            return;
+        }
+
         // create user
         createUser(email, password)
             .then(() => {
@@ -30,11 +55,11 @@ const Register = () => {
                         navigate('/');
                     })
                     .catch((err) => {
-                        setError({ ...error, createUser: err.message });
+                        setError(err.message);
                     });
             })
             .catch(err => {
-                setError({ ...error, createUser: err.message });
+                setError(err.message);
             })
 
 
@@ -92,9 +117,9 @@ const Register = () => {
                         </button>
                     </div>
 
-                    {error.createUser && (
+                    {error && (
                         <label className="label text-sm text-red-600">
-                            {error.createUser}
+                            {error}
                         </label>
                     )}
 
