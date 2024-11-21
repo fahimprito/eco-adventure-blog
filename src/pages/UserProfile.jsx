@@ -9,9 +9,9 @@ const UserProfile = () => {
     const { displayName, email, photoURL } = user;
 
     return (
-        <div className="my-20">
+        <div className="py-20 px-4 bg-[#f9a31a0c]">
 
-            <div className="border md:w-3/4 lg:w-1/3 mx-auto p-10">
+            <div className="border rounded-xl bg-white md:w-3/4 lg:w-1/3 mx-auto p-10">
                 <h2 className="text-3xl font-semibold mb-4 text-center">Welcome, {displayName}!</h2>
                 <div className="divider"></div>
                 <div className="p-10 flex flex-col gap-4 items-start">
