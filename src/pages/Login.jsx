@@ -3,10 +3,12 @@ import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import { EmailContext } from "../providers/EmailProvider";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const { loginUser, loginWithGoogle } = useContext(AuthContext);
+    const { email, setEmail } = useContext(EmailContext);
     const navigate = useNavigate();
     const [error, setError] = useState({});
     const location = useLocation();
@@ -38,6 +40,12 @@ const Login = () => {
             })
     }
 
+    const handleChange = (e) => {
+        setEmail(e.target.value);
+        console.log(e.target.value);
+        
+    };
+
     return (
         <div className="my-10">
             <div className="border md:w-3/4 lg:w-1/3 mx-auto p-10">
@@ -49,7 +57,10 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text font-semibold text-lg">Email address</span>
                         </label>
-                        <input type="email" name="email" placeholder="Enter your email address" className="input rounded-none bg-base-200" required />
+                        <input type="email"
+                            value={email}
+                            onChange={handleChange}
+                            name="email" placeholder="Enter your email address" className="input rounded-none bg-base-200" required />
                     </div>
                     <div className="form-control mt-4 relative">
                         <label className="label">

@@ -1,16 +1,18 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { EmailContext } from "../../providers/EmailProvider";
 
 
 const ResetPassword = () => {
-    const [error, setError] = useState({});
+    const [error, setError] = useState("");
     const { PasswordReset } = useContext(AuthContext);
+    const { email, setEmail } = useContext(EmailContext);
 
     const handleResetPassword = (e) => {
         e.preventDefault();
-        const email =  e.target.email.value;
-        
-        
+        const email = e.target.email.value;
+
+
         PasswordReset(email)
             .then(() => {
                 window.open('https://mail.google.com/mail/', '_blank');
@@ -20,6 +22,9 @@ const ResetPassword = () => {
             });
     }
 
+    const handleChange = (e) => {
+        setEmail(e.target.value); 
+    };
 
     return (
         <div className="py-20 px-4">
@@ -30,7 +35,10 @@ const ResetPassword = () => {
                 <form onSubmit={handleResetPassword}>
 
                     <div className="form-control mt-4">
-                        <input type="email" name="email" placeholder="Enter your email address" className="input rounded-none bg-base-200" required />
+                        <input type="email" name="email"
+                            value={email}
+                            onChange={handleChange}
+                            placeholder="Enter your email address" className="input rounded-none bg-base-200" required />
                     </div>
                     {error && (
                         <label className="label text-sm text-red-600">
