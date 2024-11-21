@@ -8,6 +8,7 @@ import Register from "../pages/Register";
 import AdventureDetails from "../pages/AdventureDetails";
 import PrivateRoute from "./PrivateRoute";
 import UserProfile from "../pages/UserProfile";
+import UpdateProfile from "../pages/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: "/myprofile",
                 element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>,
+            },
+            {
+                path: "/updateprofile",
+                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>,
             },
             {
                 path: "/adventure/:id",

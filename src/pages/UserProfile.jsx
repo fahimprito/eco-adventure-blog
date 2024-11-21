@@ -25,7 +25,11 @@ const UserProfile = () => {
                 </div>
 
                 <div className="form-control mt-4">
-                    <Link className="btn bg-[#f9a31a] hover:bg-[#db8727] text-lg rounded-md">Update Profile</Link>
+                    <Link
+                        to="/updateprofile"
+                        className="btn bg-[#f9a31a] hover:bg-[#db8727] text-lg rounded-md">
+                        Update Profile
+                    </Link>
                 </div>
 
             </div>
