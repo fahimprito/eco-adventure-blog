@@ -14,7 +14,7 @@ const UpdateProfile = () => {
         const form = e.target;
         const name = form.name.value;
         const photo = form.photo.value;
-        console.log({ name, photo });
+        // console.log({ name, photo });
 
         updateUserProfile({ displayName: name, photoURL: photo })
             .then(() => {

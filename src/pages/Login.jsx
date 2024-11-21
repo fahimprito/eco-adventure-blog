@@ -16,7 +16,7 @@ const Login = () => {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log({ email, password });
+        // console.log({ email, password });
 
         loginUser(email, password)
             .then(() => {
@@ -34,7 +34,7 @@ const Login = () => {
                 navigate(location.state ? location.state : '/');
             })
             .catch(error => {
-                console.log('ERROR', error.message)
+                setError(error.message)
             })
     }
 
