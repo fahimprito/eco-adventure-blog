@@ -68,9 +68,8 @@ const Login = () => {
                     </div>
 
                     <label
-                        // onClick={handleForgetPassword}
                         className="label mt-1">
-                        <Link className="text-gray-500 text-sm font-medium link-hover">
+                        <Link to={"/resetpassword"} className="text-gray-600 text-sm font-medium link-hover">
                             Forgot password?</Link>
                     </label>
 

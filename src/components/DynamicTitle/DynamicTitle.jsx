@@ -19,6 +19,7 @@ const DynamicTitle = () => {
                 "/adventure/:id": "Adventure Details | EcoTravelers",
                 "/login": "Login | EcoTravelers",
                 "/register": "Register | EcoTravelers",
+                "/resetpassword": "Reset-password | EcoTravelers",
             };
             
             title = pageTitles[location.pathname] || "Explore Nature | EcoTravelers";
