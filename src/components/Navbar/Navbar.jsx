@@ -68,11 +68,11 @@ const Navbar = () => {
 
                     {user ? <button
                         onClick={logOutUser}
-                        className="btn bg-[#f9a31a] hover:text-white hover:bg-[#2B3440] font-semibold text-base px-5">
+                        className="btn max-sm:btn-sm bg-[#f9a31a] hover:text-white hover:bg-[#2B3440] font-semibold text-base px-5">
                         Log Out
                     </button> : <Link
                         to="/login"
-                        className="btn bg-[#f9a31a] hover:text-white hover:bg-[#2B3440] font-semibold text-base px-5">
+                        className="btn max-sm:btn-sm bg-[#f9a31a] hover:text-white hover:bg-[#2B3440] font-semibold text-base px-5">
                         Login
                     </Link>}
 

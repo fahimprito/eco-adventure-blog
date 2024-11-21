@@ -5,7 +5,7 @@ import travelerwoman2 from "../../assets/travelerWoman2.jpg"
 const TravelersStories = () => {
 
     return (
-        <div className="py-12 bg-gray-100">
+        <div className="py-12 px-4 bg-gray-100">
             <div className="container mx-auto">
 
                 <h2 className="text-3xl font-bold my-6 md:my-10 px-4 md:divider md:divider-start">
