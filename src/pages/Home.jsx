@@ -1,6 +1,7 @@
 import AllAdventures from "../components/AdventureCards/AllAdventures";
 import Banner from "../components/Banner/Banner";
 import Guides from "../components/Guides/Guides";
+import TravelersStories from "../components/TravelersStories/TravelersStories";
 
 
 
@@ -18,7 +19,9 @@ const Home = () => {
             </section>
 
 
-            <section></section>
+            <section>
+                <TravelersStories></TravelersStories>
+            </section>
             <section>
                 <Guides></Guides>
             </section>
