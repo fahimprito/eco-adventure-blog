@@ -38,9 +38,11 @@ const Navbar = () => {
                     {
                         user && user.photoURL ? (
                             <div className="relative group">
-                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar border mt-1">
-                                    <img src={user.photoURL} alt="User Icon" className="rounded-full" />
-                                </label>
+                                <Link to="/myprofile">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar border mt-1">
+                                        <img src={user.photoURL} alt="User Icon" className="rounded-full" />
+                                    </label>
+                                </Link>
                                 <span
                                     className="absolute top-14 right-0 bg-white text-black px-3 py-1 rounded shadow-md text-sm hidden group-hover:block whitespace-nowrap z-10">
                                     {user.displayName}
@@ -48,9 +50,11 @@ const Navbar = () => {
                             </div>
                         ) : (
                             <div className="relative group">
-                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar border mt-1">
-                                    <img src={userIcon} alt="User Icon" className="rounded-full" />
-                                </label>
+                                <Link to="/myprofile">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar border mt-1">
+                                        <img src={userIcon} alt="User Icon" className="rounded-full" />
+                                    </label>
+                                </Link>
                                 {
                                     user && <span
                                         className="absolute top-14 right-0 bg-white text-black px-3 py-1 rounded shadow-md text-sm hidden group-hover:block whitespace-nowrap z-10">

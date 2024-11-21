@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Register = () => {
@@ -9,7 +9,6 @@ const Register = () => {
     const [error, setError] = useState('');
     const { createUser, updateUserProfile, loginWithGoogle } = useContext(AuthContext);
     const navigate = useNavigate();
-    const location = useLocation();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -68,7 +67,7 @@ const Register = () => {
     const handleGoogleSignIn = () => {
         loginWithGoogle()
             .then(() => {
-                navigate(location.state ? location.state : '/');
+                navigate('/');
             })
             .catch(error => {
                 console.log('ERROR', error.message)
